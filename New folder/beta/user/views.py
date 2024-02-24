@@ -9,7 +9,7 @@ from django.core.exceptions import PermissionDenied
 
 def apple_authorization(request):
     authorization_url = "https://appleid.apple.com/auth/authorize"
-    redirect_uri = request.build_absolute_uri(reverse('apple_callback')) #fix
+    redirect_uri = request.build_absolute_uri(reverse('https://jampass.onrender.com/')) 
     client_id = settings.APPLE_CLIENT_ID
     scope = "openid email " 
     
